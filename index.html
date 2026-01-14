@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>交通捉伊人 - Transport Hide and Seek</title>
+    <script>
+      // Diagnostic logging to identify module loading issues
+      console.log('%c[DEBUG] index.html loaded', 'color: cyan; font-weight: bold');
+      console.log('Document URL:', window.location.href);
+      console.log('Protocol:', window.location.protocol);
+      
+      window.addEventListener('error', (event) => {
+        console.error('%c[MODULE ERROR]', 'color: red; font-weight: bold', event);
+      });
+      
+      window.addEventListener('unhandledrejection', (event) => {
+        console.error('%c[UNHANDLED REJECTION]', 'color: red; font-weight: bold', event.reason);
+      });
+    </script>
+    <script type="module" crossorigin src="/HideAndSeek/assets/index-UtqiDDst.js"></script>
+    <link rel="stylesheet" crossorigin href="/HideAndSeek/assets/index-cDWLnvit.css">
+  </head>
+  <body>
+    <div id="game-container">
+      <canvas id="game-canvas"></canvas>
+      <div id="loading">Loading...</div>
+    </div>
+  </body>
+</html>
